@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beranda - Profil Perusahaan</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="banner">
+            <img src="https://via.placeholder.com/1200x300?text=Photo+Banner+Perusahaan" alt="Photo Banner Perusahaan">
+            <h1 id="welcomeMessage">Halo, Selamat Datang!</h1> <p>Temukan informasi lengkap tentang perusahaan kami.</p>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="profile.html">Profil Kami</a></li> <li><a href="#message-us">Kontak</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="introduction">
+            <h2>Perusahaan Kami</h2>
+            <p>
+                Selamat datang di Febri Education "FeDu"! Kami adalah perusahaan teknologi inovatif yang berdedikasi untuk menyediakan solusi perangkat lunak terbaik. Misi kami adalah terdepan dalam inovasi.
+            </p>
+        </section>
+
+        <section id="message-us">
+            <h2>Kirim Pesan Kepada Kami</h2>
+            <form id="contactForm">
+                <div class="form-group">
+                    <label for="name">Nama:</label>
+                    <input type="text" id="name" name="name" required>
+                    <div class="error-message" id="nameError"></div>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <div class="error-message" id="emailError"></div>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Nomor Telepon:</label>
+                    <input type="tel" id="phone" name="phone" required>
+                    <div class="error-message" id="phoneError"></div>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Pesan:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                    <div class="error-message" id="messageError"></div>
+                </div>
+
+                <button type="submit">Kirim</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 "FeDu". Hak Cipta Dilindungi.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
